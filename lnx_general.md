@@ -2,7 +2,7 @@
 
 Imaging with dc3dd
 
-`$ sudo dc3dd if=<device_name> hof=<image_filename> hash=md5 log=<log_filename>
+`$ sudo dc3dd if=<device_name> hof=<image_filename> hash=md5 log=<log_filename>`
 
 Example : sudo dc3dd if=/dev/sdh hof=./SOMALIA_USBK01.dd hash=md5 log=./SOMALIA_USBK01.log
 
@@ -10,7 +10,7 @@ Example : sudo dc3dd if=/dev/sdh hof=./SOMALIA_USBK01.dd hash=md5 log=./SOMALIA_
 
 Sync only by types of file extension
 
-`$ rsync -av --include='*/' --include-from=<file-with-extensions> --exclude='*' --prune-empty-dirs <source> <destination>
+`$ rsync -av --include='*/' --include-from=<file-with-extensions> --exclude='*' --prune-empty-dirs <source> <destination>`
 
   Explainations :
   - --include='*/' : to be sure all the sub-directories are scanned
@@ -26,7 +26,7 @@ Sync only by types of file extension
 
 Sync and convert latin1 to utf8 on the fly
 
-> $ rsync -avrq --iconv=latin1,utf8 <source> <destination>
+`$ rsync -avrq --iconv=latin1,utf8 <source> <destination>`
 
   Rmk : r for recursive / q for quiet (only show errors)
 
@@ -34,25 +34,27 @@ Sync and convert latin1 to utf8 on the fly
 
 Mount a device just like it has to !
 
-> $ udisksctl mount --block-device=<device>
+`$ udisksctl mount --block-device=<device>`
 
 # SYSTEM INFORMATION
 
 Get size in bytes
 
-> $ blockdev --getsize64 /dev/sda
+`$ blockdev --getsize64 /dev/sda`
 
 Get size of a block
 
-> $ blockdev --getbsz /dev/sda
+`$ blockdev --getbsz /dev/sda`
 
 # BASH SHORTCUTS
 
 History
-> $ !! -->  Repeat previous command
-> $ !4 -->  Repeat the 4th command in history
-> $ !ps --> Repeat the previous command in history that starts with "ps"
-> $ !$ --> Is the last param from the last command ex: ls !$
+```
+$ !! -->  Repeat previous command
+$ !4 -->  Repeat the 4th command in history
+$ !ps --> Repeat the previous command in history that starts with "ps"
+$ !$ --> Is the last param from the last command ex: ls !$
+```
 
 Moving the Cursor
 - Ctrl+A or Home --> Go to the beginning of the line
@@ -77,16 +79,17 @@ Cutting and Pasting
 
 Map a Windows shared folder
 
-> $ mount [-t smbfs] -o username=<username> //<ip server>/<sharename> <mount point>
+`$ mount [-t smbfs] -o username=<username> //<ip server>/<sharename> <mount point>`
 
 # CHARACTER ENCODING
 
 Convert filenames from one encoding to another
 
 In 2 steps :
-
-> $ convmv -f latin1 -t utf-8 *
-> $ convmv --notest -f latin1 -t utf-8 *
+```
+$ convmv -f latin1 -t utf-8 *
+$ convmv --notest -f latin1 -t utf-8 *
+```
 
 # MIDNIGHT COMMANDER
 
