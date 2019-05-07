@@ -1,6 +1,7 @@
 # IMAGING
 
 Imaging with dc3dd
+
 $ sudo dc3dd if=<device_name> hof=<image_filename> hash=md5 log=<log_filename>
 
   Example : sudo dc3dd if=/dev/sdh hof=./SOMALIA_USBK01.dd hash=md5 log=./SOMALIA_USBK01.log
@@ -8,6 +9,7 @@ $ sudo dc3dd if=<device_name> hof=<image_filename> hash=md5 log=<log_filename>
 # RSYNC
 
 Sync only by types of file extension
+
 $ rsync -av --include='*/' --include-from=<file-with-extensions> --exclude='*' --prune-empty-dirs <source> <destination>
 
   Explainations :
@@ -23,6 +25,7 @@ $ rsync -av --include='*/' --include-from=<file-with-extensions> --exclude='*' -
   *.docx
 
 Sync and convert latin1 to utf8 on the fly
+
 $ rsync -avrq --iconv=latin1,utf8 <source> <destination>
 
   Rmk : r for recursive / q for quiet (only show errors)
@@ -30,14 +33,17 @@ $ rsync -avrq --iconv=latin1,utf8 <source> <destination>
 # DEVICE MOUNTING
 
 Mount a device just like it has to !
+
 $ udisksctl mount --block-device=<device>
 
 # SYSTEM INFORMATION
 
 Get size in bytes
+
 $ blockdev --getsize64 /dev/sda
 
 Get size of a block
+
 $ blockdev --getbsz /dev/sda
 
 # BASH SHORTCUTS
@@ -70,6 +76,7 @@ Cutting and Pasting
 # NETWORK
 
 Map a Windows shared folder
+
 $ mount [-t smbfs] -o username=<username> //<ip server>/<sharename> <mount point>
 
 # CHARACTER ENCODING
@@ -77,6 +84,7 @@ $ mount [-t smbfs] -o username=<username> //<ip server>/<sharename> <mount point
 Convert filenames from one encoding to another
 
 In 2 steps :
+
 $ convmv -f latin1 -t utf-8 *
 $ convmv --notest -f latin1 -t utf-8 *
 
