@@ -2,9 +2,9 @@
 
 Imaging with dc3dd
 
-> $ sudo dc3dd if=<device_name> hof=<image_filename> hash=md5 log=<log_filename>
+`$ sudo dc3dd if=<device_name> hof=<image_filename> hash=md5 log=<log_filename>`
 
-  Example : sudo dc3dd if=/dev/sdh hof=./SOMALIA_USBK01.dd hash=md5 log=./SOMALIA_USBK01.log
+> Example : sudo dc3dd if=/dev/sdh hof=./SOMALIA_USBK01.dd hash=md5 log=./SOMALIA_USBK01.log
 
 # RSYNC
 
