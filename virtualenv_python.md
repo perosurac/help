@@ -8,4 +8,5 @@ $ source activate
 ```
 
 To exit the virtualenv :
+
 `$ deactivate`
