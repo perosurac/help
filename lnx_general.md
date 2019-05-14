@@ -6,6 +6,12 @@ Imaging with dc3dd
 
 Example : sudo dc3dd if=/dev/sdh hof=./SOMALIA_USBK01.dd hash=md5 log=./SOMALIA_USBK01.log
 
+# CONVERT
+
+Converting a pdf to an image
+
+`$ convert -density 200 <pdf_name> -quality 90 <png_name>`
+
 # RSYNC
 
 Sync only by types of file extension
