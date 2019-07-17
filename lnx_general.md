@@ -1,3 +1,9 @@
+# FILE EXTENSIONS COUNT
+
+Report of file extension in the current directory
+
+`find . -type f -iregex ".*\.[^.\/]+$" | rev | cut -d '.' -f 1 | rev | sort | uniq -c`
+
 # IMAGING
 
 Imaging with dc3dd
