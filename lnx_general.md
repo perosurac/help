@@ -51,6 +51,7 @@ Mount a device just like it has to !
 Add HDD in fstab
 
 `$ sudo blkid # to get the uuid of the disk in order to add it to fstab`
+
 `$ sudo mount -a # to reload fstab without rebooting`
 
 # SYSTEM INFORMATION
