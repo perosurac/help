@@ -64,6 +64,18 @@ Get size of a block
 
 `$ blockdev --getbsz /dev/sda`
 
+# PRINTING
+
+Various commands from command line
+
+List the printers and the default printer
+
+`lp -d -p`
+
+Print in landscape mode ...
+
+`lp -o landscape -o fit-to-page -o media=A4 filename.jpg`
+
 # BASH SHORTCUTS
 
 History
