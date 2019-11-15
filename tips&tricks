@@ -1,0 +1,5 @@
+Firefox fullscreen on Mac
+
+Go to about:config and set full-screen-api.allow-trusted-requests-only = false
+On bookmarks bar create a bookmark with the following 'location': 
+  javascript:document.getElementsByTagName('html')[0].mozRequestFullScreen();void(0)
