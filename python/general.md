@@ -1,9 +1,9 @@
-#Connaitre les versions
+# Connaitre les versions
 ```
 $ pip --version
 $ python --version
 ```
-Installer / désinstaller un package
+# Installer / désinstaller un package
 ```
 $ pip install <package>
 $ pip install requests==2.1.0
