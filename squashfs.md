@@ -2,7 +2,7 @@
 
 Example for paladin7.iso
 
-$ sudo apt-get install squashfs-tools
+`$ sudo apt-get install squashfs-tools`
 
 $ sudo mount -o loop <iso_filename> <mount_point>
 
