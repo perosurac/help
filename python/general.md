@@ -29,7 +29,7 @@ La bonne façon d’importer :
 1 import os
 2 print(os.getcwd())
 ```
-# On utilise moins de code après (utile dans le shell python) ; correct mais pas une bonne pratique.
+On utilise moins de code après (utile dans le shell python) ; correct mais pas une bonne pratique.
 `1 from os import *`
 
 # Importation d’une fonctionnalité d’un module
