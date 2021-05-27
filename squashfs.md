@@ -3,7 +3,9 @@
 Example for paladin7.iso
 
 $ sudo apt-get install squashfs-tools
+
 $ sudo mount -o loop <iso_filename> <mount_point>
+
 $ rsync -avr <mount_point> <tmp_folder>
 $ cd <tmp_folder>
 $ cd casper
