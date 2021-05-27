@@ -1,9 +1,7 @@
-=============================================================
-CUSTOMIZE ISO LINUX
-=============================================================
+# CUSTOMIZE ISO LINUX
 
 Example for paladin7.iso
-
+`
 $ sudo apt-get install squashfs-tools
 $ sudo mount -o loop <iso_filename> <mount_point>
 $ rsync -avr <mount_point> <tmp_folder>
@@ -13,7 +11,7 @@ $ sudo su
 $ unsquashfs filesystem.squashfs
 $ rm filesystem.squashfs
 $ chroot squashfs-root
-
+`
 ... do the modifications at this moment (eg : change wallpaper, keyboard layout, install apps, ...)
 
 $ exit
