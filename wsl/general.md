@@ -1,4 +1,4 @@
-#Installer un GUI sur Ubuntu-WSL2
+# Installer un GUI sur Ubuntu-WSL2
 ```
 sudo apt install xrdp
 sudo apt install xfce4
