@@ -1,4 +1,4 @@
-# Installer un GUI sur Ubuntu-WSL2
+# Installer un ~GUI sur Ubuntu-WSL2
 Le principe est de faire un "remote desktop" en local ...
 ```
 Installation de xrdp
@@ -39,3 +39,5 @@ A partir du PC sur lequel est installé WSL2, faire un remote desktop avec l'adr
 localhost:3390
 ```
 avec les credentials de WSL2 !!!
+
+```test``` 
