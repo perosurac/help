@@ -36,8 +36,7 @@ Commenter les lignes
 # test -x /etc/X11/Xsession && exec /etc/X11/Xsession
 # exec /bin/sh /etc/X11/Xsession
 
-A la fin du fichier, ajouter la ligne
-
+A la fin du fichier, ajouter la ligne:
 startxfce4
 ```
 Démarrer xrdp
