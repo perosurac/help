@@ -1,4 +1,5 @@
 # Installer un GUI sur Ubuntu-WSL2
+Le principe est de faire un "remote desktop" en local ...
 ```
 sudo apt install xrdp
 sudo apt install xfce4
