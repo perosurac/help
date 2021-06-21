@@ -3,7 +3,8 @@ Le principe est de faire un "remote desktop" en local ...
 
 Installation de xrdp
 ```
-$ sudo apt install xrdp```
+$ sudo apt install xrdp
+```
 
 Installation d'un gestionnaire léger
 ```
@@ -12,11 +13,13 @@ $ sudo apt install xfce4-goodies
 ```
 Copie du fichier de config ... toujours une bonne idée !
 ```
-$ sudo cp /etc/xrdp/xrdp.ini /etc/xrdp/xrdp.ini.bak```
+$ sudo cp /etc/xrdp/xrdp.ini /etc/xrdp/xrdp.ini.bak
+```
 
 Changement du port d'accès
 ```
-$ sudo sed -i 's/3389/3390/g' /etc/xrdp/xrdp.ini```
+$ sudo sed -i 's/3389/3390/g' /etc/xrdp/xrdp.ini
+```
 
 Modification de la résolution
 ```
@@ -39,10 +42,12 @@ startxfce4
 ```
 Démarrer xrdp
 ```
-$ sudo /etc/init.d/xrdp start```
+$ sudo /etc/init.d/xrdp start
+```
 
 A partir du PC sur lequel est installé WSL2, faire un remote desktop avec l'adresse 
 ```
-localhost:3390```
+localhost:3390
+```
 
 avec les credentials de WSL2 !!!
