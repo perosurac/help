@@ -58,6 +58,10 @@ $ env\Scripts\activate.bat // windows
 
 (env) $ deactivate
 ```
+Pour autoriser l'activation dans un PowerShell :
+```
+$ Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser
+``` 
 
 # Création + utilisation de requirements.txt
 Le nom “requirements.txt” est un standard dans le dev Python.
